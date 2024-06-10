@@ -1,0 +1,5 @@
+train: C:\Users\Амир\PROGRAMMING\input v tink\ds\img
+val: C:\Users\Амир\PROGRAMMING\input v tink\ds\img
+
+nc: 2  # number of classes
+names: ['0', '1']  # class names
