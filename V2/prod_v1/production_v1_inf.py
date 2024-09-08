@@ -17,7 +17,11 @@ params = json.loads(open(path, 'r').read())
 
 # load model
 model = YOLO(params['model_path'], task='detect')
-model.to('cuda')
+
+# check if model extenison is .pt and CUDA is available
+if params['model_path'][-1] == 't' and torch.cuda.is_available() is True:
+    model.to('cuda')
+
 # init cameras
 cap_1 = cv2.VideoCapture(params['cam_one_num'])
 if not cap_1.isOpened():
