@@ -4,7 +4,7 @@ from ultralytics import YOLO
 import numpy as np
 
 # Load the YOLO model
-model_path = 'C:\Work_life\HSE_and_study\Project\\build_2\model\\best.onnx'
+model_path = input('Input full path to the model')
 model = YOLO(model_path, task='detect')
 
 # Open a connection to the camera
