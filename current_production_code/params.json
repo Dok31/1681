@@ -1,0 +1,9 @@
+{
+  "model_path": "",
+  "confidence_threshold": 0.5,
+  "cam_array": [0],
+  "class": 0,
+  "cam_res": [1280, 720],
+  "max_fps": 24,
+  "break_letter": "q"
+}
